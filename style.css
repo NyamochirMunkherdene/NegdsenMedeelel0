@@ -1,0 +1,128 @@
+
+
+.layout{
+    width:90%;
+    max-width:1400px;
+    margin:30px auto;
+
+    display:flex;
+    gap:30px;
+}
+.navbar{
+    top:0px;
+    position:sticky;
+    z-index: 1000; 
+
+}
+
+.sidebar{
+    width:260px;
+    background:white;
+    border-radius:10px;
+    padding:20px;
+    outline:1px solid #edecec;
+
+    height:fit-content;
+
+    position:sticky;
+    top:76px;
+}
+
+.news-container{
+    width:100%;
+    display: grid;
+}
+
+
+/* 2. Force the pagination container to use Grid layout */
+.pageigination-container {
+    display: flex !important;
+    justify-content: center ; /* Clusters all 3 items in the middle */
+    align-items: center ;     /* Aligns them vertically */
+    gap: 15px;               /* Puts a clean, uniform space between items */
+    width:350px;
+    margin: 10px auto 0 auto !important; 
+}
+/* Center the text perfectly */
+#pageInfo {
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}
+
+.btn-secondary {
+    width: 100px !important;  /* Forces both buttons to be exactly the same size */
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    
+    /* Change your custom colors here */
+    background-color: #ffd000; 
+    color:#000;
+}
+
+
+/* Hover effect for the buttons */
+.btn-secondary a:hover {
+    background-color: #000000; /* Darker blue when hovered */
+    color: #ffd000; 
+}
+
+
+.sidebar h5{
+    margin-bottom:20px;
+}
+
+.footer{
+    bottom:0px
+}
+
+.sidebar a{
+    display:block;
+    text-decoration:none;
+    color:#333;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:8px;
+}
+
+.sidebar a:hover{
+    background:#ffc107;
+    color:black;
+}
+
+
+.news-item{
+    padding:10px;
+
+    margin-bottom:20px;
+}
+.news-item .card{
+    background: rgb(252, 252, 252);
+    padding:25px;
+    border: 3px solid rgb(235, 235, 235);
+    margin-bottom:20px;
+}
+
+
+lan .btn {
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none; /* Removes underline from links */
+}
+
+/* On home.html (Mongolian page), highlight the MN button */
+html[lang="mn"] .active-lang-mn {
+    background-color: #ffc107 !important; /* Bootstrap warning gold color */
+    color: #212529 !important;            /* Dark text for contrast */
+}
+
+/* On en.html (English page), highlight the EN button */
+html[lang="en"] .active-lang-en {
+    background-color: #ffc107 !important;
+    color: #212529 !important;
+}
